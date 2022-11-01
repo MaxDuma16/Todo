@@ -1,0 +1,60 @@
+.btn {
+    margin-left: 10px;
+    color: #130e16;
+    border: 1px solid #c097fa; 
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 18px;
+    padding: 10px 10px 10px 15px;
+    border: 1px solid #c097fa;
+    border-radius: 12px;
+}
+
+.listItem:hover {
+    background-color: #e0d5ed;
+}
+
+.title {
+    width: 1000px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.titleDone {
+    color: gray;
+    text-decoration: line-through;
+    width: 1000px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.btnCol {
+    display: flex;
+    justify-content: center;
+}
+
+.btns {
+    margin-top: 22px;
+}
+.viewStatusWrapper {
+    margin: 5px 0;
+    display: flex;
+}
+
+.noTask {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 30px;
+    color: gray;
+}
+
+.viewStatus {
+    font-size: 14px;
+    color: gray;
+    margin-right: 15px;
+}

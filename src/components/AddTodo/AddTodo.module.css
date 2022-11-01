@@ -1,0 +1,12 @@
+.addTodoForm {
+    margin-top: 22px;
+    display: flex;
+    flex: 1;
+}
+
+.submit {
+    margin-left: 15px;
+    color: #130e16;
+    background-color: #ffdff4;
+    border: 1px solid #c097fa;
+}
