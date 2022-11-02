@@ -82,7 +82,7 @@ const TodoList = ({todo, setTodo, isNewFirst, setIsNewFirst}) => {
   }
 
   return (
-    <div>
+    <div className={s.wrapper}>
       <Row>
         <Col className={s.btnCol}>
           <ButtonGroup aria-label="Basic example" className={s.btns} >
@@ -102,9 +102,10 @@ const TodoList = ({todo, setTodo, isNewFirst, setIsNewFirst}) => {
           :
           null
         }
+        <div className={s.viewStatus}>{`All tasks: ${filtredTodo.length}`}</div>
         {filtredTodo.length > 0 && 
         <div className={s.viewStatusWrapper}>
-         <div className={s.viewStatus}>{`Status view: ${isNewFirst ? 'New task first' : 'Old task first'}`}</div>
+         <div className={s.viewStatus}>{`Status: ${isNewFirst ? 'New task first' : 'Old task first'}`}</div>
          <div className={s.viewStatus}>{`Checked on ${keepCheckedOnTop ? "top" : "bottom"}`}</div>
         </div>
         }
