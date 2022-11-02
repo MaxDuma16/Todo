@@ -95,6 +95,7 @@ const TodoList = ({todo, setTodo, isNewFirst, setIsNewFirst}) => {
         </Col>
         
       </Row>
+      <div className={s.viewStatus}>{`All tasks: ${filtredTodo.length}`}</div>
         {filtredTodo.length === 0 ? 
         <div className={s.noTask}>
           No task yet :(
@@ -102,7 +103,6 @@ const TodoList = ({todo, setTodo, isNewFirst, setIsNewFirst}) => {
           :
           null
         }
-        <div className={s.viewStatus}>{`All tasks: ${filtredTodo.length}`}</div>
         {filtredTodo.length > 0 && 
         <div className={s.viewStatusWrapper}>
          <div className={s.viewStatus}>{`Status: ${isNewFirst ? 'New task first' : 'Old task first'}`}</div>
